@@ -1,14 +1,11 @@
 $(document).ready(function() {
 	$('.graphic-photo-container span').click(function(){
-
 		$('.graphic-photo').toggleClass('graphic-blur');
-		$('.hide_on_click').toggle(function() {
-		});
+		$('.hide-on-click').toggle();
 	});
-	$('.graphic-photo').click(function(){
 
+	$('.graphic-photo').click(function(){
 		$('.graphic-photo').toggleClass('graphic-blur');
-		$('.hide_on_click').toggle(function() {
-		});
+		$('.hide-on-click').toggle();
 	});
 });
