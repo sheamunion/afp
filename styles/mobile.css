@@ -13,7 +13,7 @@
   }
 
   h2 {
-    font-size: 56px;
+    font-size: 42px;
     text-align: center;
     font-weight: 400;
     margin-bottom: 10px;
@@ -61,11 +61,12 @@
   }
 
   .banner-header-text-md {
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .wrapper {
     margin: 0 auto;
+
   }
 
   .banner .wrapper {
@@ -75,7 +76,7 @@
   .hero {
     background-color: #ffe2e0;
     width: 100%;
-    height: 390px;
+    height: 330px;
     background-image: url('../images/woman.jpg');
     background-size: contain;
     background-position: center;
@@ -86,44 +87,25 @@
 
   .hero .wrapper {
     padding: 0;
+    height: 330px;
   }
 
   .slider-text {
-    background-color: rgba(255,255,255,0.3);
-    height: 300px;
-    width: 300px;
-    border-radius: 170px;
-    margin: 10px;
-    font-weight: 500;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 700;
     font-size: 36px;
     text-align: center;
     display: flex;
     align-items: center;
-    padding: 20px;
     color: #fff;
-  }
-
-  .slider-text-padding-lg {
-    padding-top: 40px;
-  }
-
-  .slider-text-padding-md {
-    padding-top: 30px;
-  }
-
-  .slider-text-padding-sm {
-    padding-top: 20px;
-  }
-
-  .slider-text-font-sm {
-    font-size: 33px;
   }
 
   .call-to-action-link {
     position: absolute;
     bottom: 0;
     background-color: rgba(0,0,0,.2);
-    padding: 0 20px;
     color: #fff;
     text-transform: uppercase;
     width: 100vw;
@@ -141,7 +123,7 @@
   }
 
   .solution-text {
-    font-size: 48px;
+    font-size: 36px;
     text-align: center;
   }
 
@@ -195,9 +177,10 @@
   }
 
   .program-details-container form {
-    width: 270px;
+    width: 88vw;
     background-color: #b3e8e6;
     padding: 20px;
+    margin-bottom: 20vw;
     display: flex;
     flex-wrap: wrap;
   }
@@ -288,45 +271,24 @@
     transform: scale(1.1);
   }
 
-  #testimonials .wrapper {
-    position: relative;
-  }
-
   .red-arrow {
-    position: absolute;
-    z-index: 2;
-  }
-
-  .red-arrow img {
-    width: 34px;
-    height: 83px;
-    cursor: pointer;
-  }
-
-  .left-arrow {
-    transform: rotate(180deg);
-    top: 200px;
-    left: 100px;
-  }
-
-  .right-arrow {
-    top: 200px;
-    right: 100px;
+    display: none;
   }
 
   .testimonial-container {
-    position: relative;
-    font-size: 24px;
-    z-index: 1;
+    font-size: 20px;
+    height: 350px;
   }
 
   .testimonial {
+    margin: 20px;
     width: 300px;
+    text-align: center;
   }
 
   .testimonial span {
     display: block;
-    font-size: 18px;
+    font-size: 16px;
     text-align: right;
   }
 
@@ -336,8 +298,8 @@
 
   .for-you-details {
     background-color: #b3e8e6;
-    padding: 40px 80px;
-    font-size: 36px;
+    padding: 40px 10px;
+    font-size: 20px;
     text-align: center;
     width: 300px;
   }
@@ -357,7 +319,7 @@
   }
 
   .callout {
-    padding: 40px 80px;
+    padding: 40px 5px;
     width: 300px;
     border: 5px solid #ffe2e0;
     margin: 20px auto;
@@ -376,7 +338,6 @@
   }
 
   .book-now-form form {
-    width: 100vw;
     background-color: #b3e8e6;
     padding: 20px;
     display: flex;
@@ -435,6 +396,7 @@
     text-align: center;
     border-radius: 25px 10px 10px 25px;
     position: relative;
+    margin-top: 40px;
   }
 
   .book-now-form div {
@@ -447,24 +409,22 @@
     width: 100%;
   }
 
+  #not-for-you { margin: 50px 0; }
+
   .not-for-you-header {
-    margin-top: 0;
+    margin-top: 30px;
     width: 600px;
   }
 
-  .not-for-you-list {
-    font-size: 24px;
-  }
+  .not-for-you-list { font-size: 24px; }
 
-  #team .wrapper {
-    padding-bottom: 0;
-  }
+  #team .wrapper { padding-bottom: 0; }
 
   .team-container {
     margin: 0 auto;
-    display: flex;
-    width: 800px;
     padding-bottom: 40px;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
   .team-container h5 {
@@ -474,21 +434,31 @@
   }
 
   .team-container p {
-    font-size: 24px;
+    font-size: 20px;
+  }
+
+  .team-container div {
+    margin: 0 15px;
+  }
+
+  #taghizadeh {
+    width: 307px;
+    margin: 0 auto;
+  }
+
+  #gahr {
+    width: 274px;
+    margin: 0 auto;
   }
 
   #team .team-container:nth-child(2) {
     padding-bottom: 0;
   }
 
-  .faqs {
-    width: 760px;
-  }
-
   .faqs h4 {
     border-radius: 15px;
     background-color: #b3e8e6;
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 400;
     text-align: center;
     padding: 5px;
@@ -496,7 +466,7 @@
   }
 
   .faqs p {
-    font-size: 36px;
+    font-size: 20px;
     margin-top: 10px;
     text-align: center;
 
@@ -528,28 +498,27 @@
 
   .remedy-container + div {
     text-align: center;
-    width: 650px;
     margin: 0 auto;
   }
 
-  .benefits-container {
-    width: 800px;
-  }
+  #remedies div div:nth-child(3) { margin: 22px; }
+
+  #remedies div div:nth-child(3) p { font-size: 24px; }
 
   .benefits-container ul li {
     list-style-type: none;
     position: relative;
-    padding: 0 0 50px 90px;
+    padding: 0 0 30px 55px;
   }
 
   .benefits-container li::before {
     content: "";
     background-image: url("../images/green_check.png");
-    width: 77px;
-    height: 57px;
-    background-size: 77px 57px;
+    width: 38px;
+    height: 28px;
+    background-size: 38px 28px;
     position: absolute;
-    top: -20px;
+    top: 9px;
     left: 0;
   }
 

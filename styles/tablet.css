@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1050px) and (min-width: 768px) {
+@media only screen and (max-width: 1049px) and (min-width: 768px)  {
   body {
     margin: 0 auto;
     color: #666;
@@ -59,7 +59,6 @@
 
   .wrapper {
     margin: 0 auto;
-    width: 1024px;
     padding: 40px 0;
   }
 
@@ -71,7 +70,6 @@
     background-color: #ffe2e0;
     width: 100%;
     height: 360px;
-    min-width: 1024px;
     background-image: url('../images/woman.jpg');
     background-size: contain;
     background-position: 90% center;
@@ -172,7 +170,7 @@
 
   .program-details-container .flex-container {
     align-items: center;
-    width: 800px;
+    /*width: 800px;*/
   }
 
   .program-details-container ul {
@@ -224,7 +222,7 @@
     position: relative;
     display: block;
     margin: 0 auto;
-    width: 820px;
+    width: 753px;
     height: 351px;
     overflow: hidden;
   }
@@ -263,14 +261,13 @@
 
   .graphic-photo-container div span::after {
     content: "";
-    background-image: url("../images/arrow.png");
+    background: url("../images/arrow.png") no-repeat;
     height: 23px;
     width: 32px;
     background-size: 32px 23px;
     margin-left: 10px;
     display: inline-block;
     padding: 0 15px;
-    background-repeat: no-repeat;
   }
 
   .graphic-photo {
@@ -288,32 +285,13 @@
     position: relative;
   }
 
-  .red-arrow {
-    position: absolute;
-    z-index: 2;
-  }
-
-  .red-arrow img {
-    width: 34px;
-    height: 83px;
-    cursor: pointer;
-  }
-
-  .left-arrow {
-    transform: rotate(180deg);
-    top: 200px;
-    left: 100px;
-  }
-
-  .right-arrow {
-    top: 200px;
-    right: 100px;
-  }
-
   .testimonial-container {
     position: relative;
     font-size: 24px;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .testimonial {
@@ -326,6 +304,23 @@
     text-align: right;
   }
 
+  .red-arrow img {
+    width: 34px;
+    height: 83px;
+    cursor: pointer;
+  }
+
+  .left-arrow {
+    transform: rotate(180deg);
+    margin-right: 20px;
+    font-size: 0;
+    margin-bottom: 4px;
+  }
+
+  .right-arrow {
+    margin-left: 20px;
+  }
+
   .center-block {
     margin: 0 auto;
   }
@@ -335,7 +330,6 @@
     padding: 40px 80px;
     font-size: 36px;
     text-align: center;
-    width: 600px;
   }
 
   .for-you-details p {
@@ -353,9 +347,9 @@
   }
 
   .callout {
-    padding: 40px 80px;
-    width: 594px;
-    border: 5px solid #ffe2e0;
+    padding: 40px 77px;
+    width: 590px;
+    border: 4px solid #ffe2e0;
     margin: 20px auto;
   }
 
@@ -372,7 +366,7 @@
   }
 
   .book-now-form form {
-    width: 730px;
+    width: 713x;
     background-color: #b3e8e6;
     padding: 20px;
     display: flex;
@@ -459,7 +453,7 @@
   .team-container {
     margin: 0 auto;
     display: flex;
-    width: 800px;
+    width: 740px;
     padding-bottom: 40px;
   }
 
@@ -475,10 +469,6 @@
 
   #team .team-container:nth-child(2) {
     padding-bottom: 0;
-  }
-
-  .faqs {
-    width: 760px;
   }
 
   .faqs h4 {
@@ -526,10 +516,6 @@
     text-align: center;
     width: 650px;
     margin: 0 auto;
-  }
-
-  .benefits-container {
-    width: 800px;
   }
 
   .benefits-container ul li {

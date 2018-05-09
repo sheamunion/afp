@@ -47,7 +47,7 @@
             </div>
           </div>
         </div>
-        <a href="#book-consultation" alt="Jump to request a consultation form on this page.">
+        <a href="#say-yes" alt="Jump to request a consultation form on this page.">
           <div class="call-to-action-link heavy">
             <p>Request free consultation</p>
           </div>
@@ -103,11 +103,11 @@
             </ul>
           </div>
           <div>
-            <form action="#">
+            <form method="POST" action="mail.php">
               <h2 class="heavy">Request free consultation</h2>
-              <input type="text" placeholder="name">
-              <input type="text" placeholder="phone">
-              <input type="text" placeholder="email">
+              <input type="text" name="name" placeholder="name">
+              <input type="text" name="phone" placeholder="phone">
+              <input type="text" name="email" placeholder="email">
               <input type="submit" value="Contact Us">
             </form>
           </div>
@@ -135,29 +135,31 @@
     <section id="testimonials">
       <div class="wrapper">
         <h2>What our clients are saying:</h2>
-        <div class="left-arrow red-arrow">
-          <a href="#" id="prev"><img src="images/carousel_arrow.png" alt="Left arrow icon. Click this arrow icon to slide to the previous text block."></a>
-        </div>
-        <div class="right-arrow red-arrow">
-          <a href="#" id="next"><img src="images/carousel_arrow.png" alt="Right arrow icon. Click this arrow icon to slide to the next text block."></a>
-        </div>
-        <div class="testimonial-container cycle-slideshow"
-          data-cycle-fx="fade"
-          data-cycle-fx-speed=600
-          data-cycle-fx-timeout=4000
-          data-cycle-slides="> div"
-          data-cycle-prev="#prev"
-          data-cycle-next="#next"
-          data-cycle-center-horz=true
-            data-cycle-center-vert=true
-        >
-          <div class="testimonial">
-            "Cronut synth glossier, humblebrag knausgaard tofu edison bulb jianbing street art paleo trust fund. Iceland man bun actually tote bag photo booth copper mug lomo live-edge taiyaki stumptown portland before they sold out aesthetic twee fixie."
-            <span>- Jane Doe (received treatment Dec. 2017)</span>
+        <div class="testimonial-container">
+          <div class="left-arrow red-arrow">
+            <a href="#" id="prev"><img src="images/carousel_arrow.png" alt="Left arrow icon. Click this arrow icon to slide to the previous text block."></a>
           </div>
-          <div class="testimonial">
-            "Kombucha tote bag waistcoat celiac ugh put a bird on it sartorial paleo portland coloring book. Mumblecore unicorn echo park hexagon, tattooed green juice tumeric gastropub heirloom portland subway tile prism messenger bag. Offal trust fund enamel pin listicle keytar. Hot chicken vegan put a bird on it marfa prism pug."
-            <span>- Jane Doe (received treatment Dec. 2017)</span>
+          <div class="cycle-slideshow"
+            data-cycle-fx="fade"
+            data-cycle-fx-speed=600
+            data-cycle-fx-timeout=4000
+            data-cycle-slides="> div"
+            data-cycle-prev="#prev"
+            data-cycle-next="#next"
+            data-cycle-center-horz=true
+            data-cycle-center-vert=true
+          >
+            <div class="testimonial">
+              "Cronut synth glossier, humblebrag knausgaard tofu edison bulb jianbing street art paleo trust fund. Iceland man bun actually tote bag photo booth copper mug lomo live-edge taiyaki stumptown portland before they sold out aesthetic twee fixie."
+              <span>- Jane Doe (received treatment Dec. 2017)</span>
+            </div>
+            <div class="testimonial">
+              "Kombucha tote bag waistcoat celiac ugh put a bird on it sartorial paleo portland coloring book. Mumblecore unicorn echo park hexagon, tattooed green juice tumeric gastropub heirloom portland subway tile prism messenger bag. Offal trust fund enamel pin listicle keytar. Hot chicken vegan put a bird on it marfa prism pug."
+              <span>- Jane Doe (received treatment Dec. 2017)</span>
+            </div>
+          </div>
+          <div class="right-arrow red-arrow">
+            <a href="#" id="next"><img src="images/carousel_arrow.png" alt="Right arrow icon. Click this arrow icon to slide to the next text block."></a>
           </div>
         </div>
       </div>
@@ -187,13 +189,13 @@
           <h3>Book your <span class="heavy">free</span> consultation today!</h3>
         </div>
         <div class="book-now-form">
-          <form class="center-block" action="#">
-            <input type="text" placeholder="name">
-            <input type="text" placeholder="phone">
-            <input type="text" placeholder="email">
+          <form method="POST" action="mail.php" class="center-block">
+            <input type="text" name="name" placeholder="name">
+            <input type="text" name="phone" placeholder="phone">
+            <input type="text" name="email" placeholder="email">
             <div>
               <input type="submit" value="book now">
-              <a href="#">Call Now</a>
+              <a href="tel:4802960488" target="_blank">Call Now</a>
             </div>
           </form>
         </div>
@@ -226,7 +228,7 @@
               Dr. Farhan Taghizadeh became interested in how lasers can improve aesthetic results over 15 years ago. He worked at a national aesthetic company and helped them develop a $60 million per year laser rejuvenation program. Since then he has consulted with numerous laser companies both in the U.S. and overseas, and selected the most cutting edge technology for the Intimate Brightening Program.
             </p>
           </div>
-          <img src="images/taghizadeh.jpg" alt="Headshot of Dr. Taghizaeh.">
+          <img id="taghizadeh" src="images/taghizadeh.jpg" alt="Headshot of Dr. Taghizaeh.">
         </div>
         <div class="team-container">
           <div>
@@ -235,7 +237,7 @@
               Camille started her laser career in the Castro district of San Francisco, and got interested in intimate lightening from the start. She has spent years developing this program, and is passionate about delivering beautiful results. With over 20 years experience, Camille knows how to use lasers to start pigment lightening in every patient. She is an expert at putting her patients at ease, and makes you feel comfortable from the moment you meet her
             </p>
           </div>
-          <img src="images/gahr.jpg" alt="Headshot of Camille Gahr.">
+          <img id="gahr" src="images/gahr.jpg" alt="Headshot of Camille Gahr.">
         </div>
       </div>
     </section>
@@ -357,13 +359,13 @@
           <h4 class="text-center">Ready to Get Started?</h4>
           <p class="text-center">Purchase your Brighten Up Pads today and book your free consultation!</p>
           <div class="book-now-form">
-            <form id="book-now-form" action="#">
-              <input type="text" placeholder="name">
-              <input type="text" placeholder="phone">
-              <input type="text" placeholder="email">
+            <form id="book-now-form" method="POST" action="mail.php">
+              <input type="text" name="name" placeholder="name">
+              <input type="text" name="phone" placeholder="phone">
+              <input type="text" name="email" placeholder="email">
               <div>
                 <input type="submit" value="book now">
-                <a href="#">Call Now</a>
+                <a href="tel:4802960488" target="_blank">Call Now</a>
               </div>
             </form>
           </div>
@@ -372,14 +374,10 @@
     </section>
     <footer>
       <div class="wrapper">
-        <a href="#" alt="" target="_blank" class="store-link">
-          <span class="sr-only">Opens in new window</span>
-          <img src="images/shop_icon.png" alt="Icon of shopping bag."><span>Visit our online store.</span>
-        </a>
         <div class="flex-container social-container">
-          <a href="" class="facebook social"></a>
-          <a href="" class="instagram social"></a>
-          <a href="" class="twitter social"></a>
+          <a href="https://www.facebook.com/arizonafacialplastics/"  target="_blank" class="facebook social"><span class="sr-only">Opens in a new window. Go to Arizona Facial Plastics on Facebook.</span></a>
+          <a href="https://www.instagram.com/arizonafacialplastics/" target="_blank" class="instagram social"><span class="sr-only">Opens in a new window. Go to Arizona Facial Plastics on Instagram.</span></a>
+          <a href="https://twitter.com/azfaceplastics" target="_blank" class="twitter social"><span class="sr-only">Opens in a new window. Go to Arizona Facial Plastics on Twitter.</span></a>
         </div>
         <div class="logo">
           <img src="images/logo.png">
