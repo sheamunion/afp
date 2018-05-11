@@ -1,0 +1,167 @@
+@media only screen and (min-width: 1050px) {
+  .wrapper {
+    margin: 0 auto;
+    width: 1024px;
+    padding: 40px 0;
+  }
+
+  .hero {
+    height: 360px;
+    min-width: 1024px;
+    background-position: 75% center;
+  }
+
+  .slider-text {
+    background-color: #fff;
+    height: 300px;
+    width: 300px;
+    border-radius: 170px;
+    margin: 10px 10px 10px 150px;
+    font-weight: 500;
+    padding: 20px;
+  }
+
+  .slider-text-padding-lg {
+    padding-top: 40px;
+  }
+
+  .slider-text-padding-md {
+    padding-top: 30px;
+  }
+
+  .slider-text-padding-sm {
+    padding-top: 20px;
+  }
+
+  .slider-text-font-sm {
+    font-size: 33px;
+  }
+
+  .call-to-action-link {
+    left: 0;
+    bottom: 40px;
+    background-color: rgba(0, 0, 0, .2);
+    padding: 10px 20px;
+    width: 150px;
+    font-size: 18px;
+  }
+
+  .solution-text {
+    font-size: 48px;
+  }
+
+  .program-details-container .flex-container {
+    width: 800px;
+  }
+
+  .program-details-container ul {
+    width: 407px;
+    font-size: 24px;
+  }
+
+  .program-details-container form {
+    width: 270px;
+  }
+
+  .graphic-photo-container {
+    width: 820px;
+    height: 351px;
+  }
+
+  #testimonials .wrapper {
+    position: relative;
+  }
+
+
+  .testimonial-container {
+    position: relative;
+    font-size: 24px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .testimonial {
+    width: 700px;
+  }
+
+  .red-arrow img {
+    width: 34px;
+    height: 83px;
+    cursor: pointer;
+  }
+
+  .left-arrow {
+    transform: rotate(180deg);
+    margin-right: 20px;
+    font-size: 0;
+    margin-bottom: 4px;
+  }
+
+  .right-arrow {
+    margin-left: 20px;
+  }
+
+  .for-you-details {
+    padding: 40px 80px;
+    font-size: 36px;
+    width: 600px;
+  }
+
+  .callout {
+    padding: 40px 80px;
+    width: 594px;
+    border: 5px solid #ffe2e0;
+    margin: 20px auto;
+  }
+
+  .book-now-form form {
+    width: 730px;
+  }
+
+  .not-for-you-header {
+    margin-top: 0;
+  }
+
+  .team-container {
+    width: 800px;
+  }
+
+  .team-container p {
+    font-size: 24px;
+  }
+
+  #faqs .wrapper {
+    padding-bottom: 0;
+  }
+
+  .faqs {
+    width: 760px;
+  }
+
+  .faqs h4 {
+    font-size: 36px;
+  }
+
+  .faqs p {
+    font-size: 36px;
+  }
+
+  #remedies .wrapper {
+    padding-top: 0;
+  }
+
+  .remedies-header h2 {
+    margin: 0 0 40px 0;
+  }
+
+  .remedy-container + div {
+    width: 650px;
+  }
+
+  .benefits-container {
+    width: 800px;
+  }
+
+}

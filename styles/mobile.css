@@ -1,0 +1,167 @@
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 42px;
+  }
+
+  .banner {
+    width: 100%;
+  }
+
+  .banner-header-text-md {
+    font-size: 32px;
+  }
+
+  .wrapper {
+    margin: 0 auto;
+  }
+
+  .hero {
+    height: 330px;
+    background-position: center;
+  }
+
+  .hero .wrapper {
+    height: 330px;
+  }
+
+  .slider-text {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .call-to-action-link {
+    bottom: 0;
+    background-color: rgba(0,0,0,.2);
+    width: 100vw;
+    font-size: 18px;
+  }
+
+  .solution-text {
+    font-size: 36px;
+  }
+
+  .program-details-container .flex-container {
+    width: 300px;
+  }
+
+  .program-details-container ul {
+    width: 200px;
+    font-size: 24px;
+  }
+
+  .program-details-container form {
+    width: 88vw;
+    margin-bottom: 20vw;
+  }
+
+  .graphic-photo-container {
+    min-height: 351px;
+  }
+
+  .graphic-photo-container div span::after {
+    background-repeat: no-repeat;
+  }
+
+  .testimonial-container {
+    font-size: 20px;
+    height: 350px;
+  }
+
+  .testimonial {
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .red-arrow {
+    display: none;
+  }
+
+  .for-you-details {
+    padding: 40px 10px;
+    font-size: 20px;
+    width: 300px;
+  }
+
+  .callout {
+    padding: 40px 5px;
+    width: 300px;
+    border: 5px solid #ffe2e0;
+    margin: 20px auto;
+  }
+
+  .book-now-form a {
+    margin-top: 40px;
+  }
+
+  #not-for-you { margin: 50px 0; }
+
+  .not-for-you-header {
+    margin-top: 30px;
+  }
+
+  .team-container {
+    flex-direction: column-reverse;
+    width: 90%;
+  }
+
+  .team-container p {
+    font-size: 20px;
+  }
+
+  .team-container div {
+    margin: 0 15px;
+  }
+
+  #taghizadeh {
+    width: 307px;
+    margin: 0 auto;
+  }
+
+  #gahr {
+    width: 274px;
+    margin: 0 auto;
+  }
+
+  .faqs {
+    width: 90%;
+  }
+
+  .faqs h4 {
+    font-size: 24px;
+  }
+
+  .faqs p {
+    font-size: 20px;
+  }
+
+  .remedies-header h2 {
+    margin: 30px 0;
+  }
+
+  .remedy-container + div {
+    width: 90%;
+  }
+
+  .benefits-container ul li {
+    padding: 0 0 30px 55px;
+  }
+
+  .benefits-container li::before {
+    width: 38px;
+    height: 28px;
+    background-size: 38px 28px;
+    top: 9px;
+  }
+}
