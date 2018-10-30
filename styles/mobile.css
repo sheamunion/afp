@@ -69,6 +69,15 @@
     min-height: 351px;
   }
 
+  .graphic-photo-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .graphic-photo-container div {
+    padding-top: 0;
+  }
+  
   .graphic-photo-container div span::after {
     background-repeat: no-repeat;
   }
@@ -80,7 +89,6 @@
 
   .testimonial {
     margin: 20px;
-    width: 300px;
     text-align: center;
   }
 

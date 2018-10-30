@@ -1,14 +1,30 @@
-$(document).ready(function() {
-	function toggleClasses() {
-		$('.graphic-photo').toggleClass('graphic-blur');
-		$('.hide-on-click').toggle();
-	}
+$(document).ready(function () {
+    let $graphicContainer = $('.graphic-photo-container');
 
-	$('.graphic-photo-container span').click(function(){
-		toggleClasses();
-	});
+    function startCycle() {
+        $graphicContainer.cycle({
+            speed: 800,
+            timeout: 1500
+        });
+    }
 
-	$('.graphic-photo').click(function(){
-		toggleClasses();
-	});
+    function stopAndDestroyCycle() {
+        $graphicContainer.cycle('stop');
+        $graphicContainer.cycle('destroy');
+    }
+
+    function toggleClasses() {
+        $('.graphic-photo').toggleClass('graphic-blur');
+        $('.hide-on-click').toggle();
+    }
+
+    $('.graphic-photo-container span').click(function () {
+        toggleClasses();
+        startCycle();
+    });
+
+    $('.graphic-photo').click(function () {
+        toggleClasses();
+        stopAndDestroyCycle();
+    });
 });
